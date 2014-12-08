@@ -3,8 +3,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
+gem 'railties', '4.1.6'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -40,13 +41,13 @@ gem 'spring',        group: :development
 
 group :development do
 	gem 'sqlite3'
-	gem 'rspec-rails', '2.6.1', :require => 'rspec-rails'
+	gem 'rspec-rails', :require => 'rspec-rails'
 	gem 'faker', '0.3.1'
 end
 
 group :test do
 	gem 'sqlite3'
-	gem 'rspec-rails', '2.6.1', :require => 'rspec-rails'
+	gem 'rspec-rails', :require => 'rspec-rails'
 	gem 'webrat', '0.7.1'
 	gem 'factory_girl_rails', '1.0'
 	gem 'turn', :require => false
